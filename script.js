@@ -1,10 +1,11 @@
 var msg = prompt("Scrivi qualcosa");
 
 function initVue(msg){
-  newVue({
+  new Vue({
     el: '#write',
     data: {
       'message' : msg
     },
   });
 }
+initVue(msg);
